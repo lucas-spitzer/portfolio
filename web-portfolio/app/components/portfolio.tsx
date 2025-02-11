@@ -76,10 +76,11 @@ export default function Portfolio() {
                     className="h-full w-full transition-transform duration-500 group-hover:scale-110"
                   />
                 ) : (
-                  <img
+                  <Image
                     src={project.src || "/placeholder.svg"}
                     alt={project.alt}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    width={500}
+                    height={300}
                   />
                 )}
               </div>

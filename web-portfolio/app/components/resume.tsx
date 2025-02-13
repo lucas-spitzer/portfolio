@@ -57,8 +57,8 @@ export default function Resume() {
                   <h3 className="text-xl font-semibold">Product Development Intern</h3>
                   <p className="text-sm text-gray-400">Cranium • June 2023 - August 2023</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
-                    <li>Communicated a development plan and built a secure data pipeline for five different types of partner's OpenAI assets.</li>
-                    <li>Programmed hundreds of lines of code with Cranium's development team using the .NET Framework & C# language.</li>
+                    <li>Communicated a development plan and built a secure data pipeline for five different types of partner&apos;s OpenAI assets.</li>
+                    <li>Programmed hundreds of lines of code with Cranium&apos;s development team using the .NET Framework & C# language.</li>
                     <li>Practiced agile methodology daily while leveraging Azure DevOps.</li>
                   </ul>
                 </div>
@@ -66,7 +66,7 @@ export default function Resume() {
                   <h3 className="text-xl font-semibold">Product Analyst Intern</h3>
                   <p className="text-sm text-gray-400">Boost Insurance • June 2022 - January 2023</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
-                    <li>Provided support and communicated to integrate partners into Boost's backend software.</li>
+                    <li>Provided support and communicated to integrate partners into Boost&apos;s backend software.</li>
                     <li>Presented ideation activities and development plans to tech teams three times throughout employment.</li>
                     <li>Tested relevant APIs with Postman and maintained data in Django for legal compliance daily.</li>
                   </ul>
@@ -89,7 +89,7 @@ export default function Resume() {
                   <h3 className="text-xl font-semibold">Data Science, BS</h3>
                   <p className="text-sm text-gray-400">Ramapo College • 2024 - 2026</p>
                   <div className="mt-4 text-gray-300">
-                    <p>Computer Science & Psychology Minor</p>
+                    <p>Computer Science Minor</p>
                   </div>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
@@ -103,7 +103,7 @@ export default function Resume() {
                   <h3 className="text-xl font-semibold">Professional Data Analyst Certificate</h3>
                   <p className="text-sm text-gray-400">IBM • August 2023</p>
                   <div className="mt-4 text-gray-300">
-                    <p>Acquired through Coursera</p>
+                    <p>Acquired through Coursera (100+ hours)</p>
                   </div>
                 </div>
               </div>

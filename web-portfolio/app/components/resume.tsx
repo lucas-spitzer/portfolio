@@ -57,18 +57,27 @@ export default function Resume() {
                   <h3 className="text-xl font-semibold">Product Development Intern</h3>
                   <p className="text-sm text-gray-400">Cranium • June 2023 - August 2023</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
-                    <li>Key achievement or responsibility</li>
-                    <li>Another significant contribution</li>
-                    <li>Technical skill or project highlight</li>
+                    <li>Communicated a development plan and built a secure data pipeline for five different types of partner's OpenAI assets.</li>
+                    <li>Programmed hundreds of lines of code with Cranium's development team using the .NET Framework & C# language.</li>
+                    <li>Practiced agile methodology daily while leveraging Azure DevOps.</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
                   <h3 className="text-xl font-semibold">Product Analyst Intern</h3>
                   <p className="text-sm text-gray-400">Boost Insurance • June 2022 - January 2023</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
-                    <li>Key achievement or responsibility</li>
-                    <li>Another significant contribution</li>
-                    <li>Technical skill or project highlight</li>
+                    <li>Provided support and communicated to integrate partners into Boost's backend software.</li>
+                    <li>Presented ideation activities and development plans to tech teams three times throughout employment.</li>
+                    <li>Tested relevant APIs with Postman and maintained data in Django for legal compliance daily.</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Head Lifeguard</h3>
+                  <p className="text-sm text-gray-400">Chester Area Pool • Summers 2019 - 2024</p>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Led over 50 coworkers through various training exercises to prepare for effective emergency response.</li>
+                    <li>Taught employees how to utilize pool vacuums and balance pool with a a half dozen different chemicals.</li>
+                    <li>Scanned and enforced pool rules during open hours daily.</li>
                   </ul>
                 </div>
               </div>
@@ -103,13 +112,23 @@ export default function Resume() {
             {activeFilter === "reading" && (
               <div className="space-y-8">
                 <div className="rounded-lg bg-zinc-900 p-6">
-                  <h3 className="text-xl font-semibold">Technical Reading List</h3>
+                  <h3 className="text-xl font-semibold">Statistics & Predictions</h3>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>The Signal and the Noise - Nate Silver</li>
                     <li>Everything is Predictable - Tom Chivers</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Productive Habits</h3>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>Atomic Habits - James Clear</li>
                     <li>Deep Work - Cal Newport</li>
                     <li>Flow - Mihaly Csikszentmihalyi</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Tech: Past, Present, & Future</h3>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>The Metaverse - Matthew Ball</li>
                     <li>Read Write Own - Chris Dixon</li>
                     <li>How the Internet Happened - Brian McCullough</li>

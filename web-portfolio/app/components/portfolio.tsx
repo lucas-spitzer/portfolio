@@ -30,9 +30,9 @@ export default function Portfolio() {
       src: "/icons/Web-Portfolio.svg",
       alt: "Project 3",
       title: "Web Portfolio",
-      description: "Web Development",
+      description: "Web App Development",
       icon: true,
-      github: "https://github.com/lucas-spitzer/web-portfolio",
+      github: "https://github.com/lucas-spitzer/portfolio",
     },
     {
       src: "/icons/Bit-Safe.svg",

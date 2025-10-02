@@ -21,10 +21,10 @@ export default function Portfolio() {
     {
       src: "/icons/Recall.svg",
       alt: "Project 2",
-      title: "Recall",
+      title: "QnGen",
       description: "AI & Machine Learning",
       icon: true,
-      github: "https://github.com/lucas-spitzer/",
+      github: "https://test-craft-ai-29f1d8d7.base44.app/",
     },
     {
       src: "/icons/Web-Portfolio.svg",
@@ -93,7 +93,7 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className="mt-4 rounded-full bg-white/10 px-4 py-1 text-sm text-white hover:bg-white/20 transition-colors"
                 >
-                  View on GitHub
+                  {project.title === "QnGen" ? "Visit App" : "View on GitHub"}
                 </a>
               </div>
             </motion.div>

@@ -24,7 +24,7 @@ export default function Portfolio() {
       title: "QnGen",
       description: "AI & Machine Learning",
       icon: true,
-      github: "https://qngen.app/",
+      github: "https://qngen.base44.app",
     },
     {
       src: "/icons/Web-Portfolio.svg",

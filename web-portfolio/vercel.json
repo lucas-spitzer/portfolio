@@ -1,1 +1,8 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+  "rewrites": [
+    { "source": "/astb-prep", "destination": "/astb-prep" },
+    { "source": "/astb-prep/(.*)", "destination": "/astb-prep/$1" },
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}

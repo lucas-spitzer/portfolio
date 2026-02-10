@@ -76,3 +76,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* White calendar icon on dark date inputs (e.g. ASTB prep page) */
+.astb-date-input::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  opacity: 1;
+}

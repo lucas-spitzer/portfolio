@@ -54,6 +54,24 @@ export default function Resume() {
             {activeFilter === "experience" && (
               <div className="space-y-8">
                 <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Substitute Teacher</h3>
+                  <p className="text-sm text-gray-400">Roxbury Public Schools • October 2025 - Present</p>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Led classrooms across grade levels, delivering instruction while maintaining continuity with district lesson plans.</li>
+                    <li>Maintained structured, respectful learning environments through proactive classroom management and clear expectations.</li>
+                    <li>Built strong rapport with students and faculty to support a positive, productive school culture.</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Officer Candidate School</h3>
+                  <p className="text-sm text-gray-400">United States Marine Corps • May 2025 - August 2025</p>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Completed the 10-week Officer Candidates School, demonstrating sustained leadership and resilience under intense physical and mental demands.</li>
+                    <li>Led peers in high-pressure team scenarios, earning qualification through sound decision-making, accountability, and Marine Corps leadership principles.</li>
+                    <li>Met rigorous standards in physical fitness, tactical problem-solving, and ethical leadership while performing at E-5 expectations.</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
                   <h3 className="text-xl font-semibold">Product Development Intern</h3>
                   <p className="text-sm text-gray-400">Cranium • June 2023 - August 2023</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
@@ -73,7 +91,7 @@ export default function Resume() {
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
                   <h3 className="text-xl font-semibold">Head Lifeguard</h3>
-                  <p className="text-sm text-gray-400">Chester Area Pool • Summers 2019 - 2024</p>
+                  <p className="text-sm text-gray-400">Chester Area Pool • Summers 2019 - 2025</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>Led over 50 coworkers through various training exercises to prepare for effective emergency response.</li>
                     <li>Taught employees how to utilize pool vacuums and balance pool with a a half dozen different chemicals.</li>
@@ -112,26 +130,45 @@ export default function Resume() {
             {activeFilter === "reading" && (
               <div className="space-y-8">
                 <div className="rounded-lg bg-zinc-900 p-6">
-                  <h3 className="text-xl font-semibold">Statistics & Predictions</h3>
+                  <h3 className="text-xl font-semibold">Predictions</h3>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>The Signal and the Noise - Nate Silver</li>
                     <li>Everything is Predictable - Tom Chivers</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
-                  <h3 className="text-xl font-semibold">Productive Habits</h3>
+                  <h3 className="text-xl font-semibold">Productivity</h3>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>Atomic Habits - James Clear</li>
                     <li>Deep Work - Cal Newport</li>
                     <li>Flow - Mihaly Csikszentmihalyi</li>
+                    <li>The 7 Habits of Highly Effective People - Stephen Covey</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
-                  <h3 className="text-xl font-semibold">Tech: Past, Present, & Future</h3>
+                  <h3 className="text-xl font-semibold">Technology</h3>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>The Metaverse - Matthew Ball</li>
                     <li>Read Write Own - Chris Dixon</li>
                     <li>How the Internet Happened - Brian McCullough</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Stoicism</h3>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Can&apos;t Hurt Me - David Goggins</li>
+                    <li>The Obstacle is the Way - Ryan Holiday</li>
+                    <li>Never Finished - David Goggins</li>
+                    <li>Meditations - Marcus Aurelius</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Business</h3>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Start with Why - Simon Sinek</li>
+                    <li>Influence - Robert Cialdini</li>
+                    <li>The Infinite Game - Simon Sinek</li>
+                    <li>Zero to One - Peter Thiel</li>
                   </ul>
                 </div>
               </div>

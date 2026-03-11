@@ -21,6 +21,13 @@ function isWeekday(dateStr: string): boolean {
   return day >= 1 && day <= 5
 }
 
+const VACATION_START = "2026-03-12"
+const VACATION_END = "2026-03-22"
+
+function isVacationDate(dateStr: string): boolean {
+  return dateStr >= VACATION_START && dateStr <= VACATION_END
+}
+
 export default function ASTBPrepPage() {
   const [date, setDate] = useState("")
   const [timeSlot, setTimeSlot] = useState<string | null>(null)
@@ -54,6 +61,11 @@ export default function ASTBPrepPage() {
 
     if (!isWeekday(date)) {
       setError("Please select a weekday (Monday–Friday).")
+      return
+    }
+
+    if (isVacationDate(date)) {
+      setError("I'm unavailable March 12–22 for vacation. Please select another date.")
       return
     }
 
@@ -112,6 +124,9 @@ export default function ASTBPrepPage() {
           <p className="mb-12 text-gray-400">
             Schedule a 1-hour tutoring session. Available 4–8pm on weekdays. Book at least one day in advance.
           </p>
+          <p className="mb-12 rounded-lg bg-amber-500/10 border border-amber-500/30 px-4 py-3 text-amber-200 text-sm">
+            Unavailable March 12–22 for vacation. Please choose another date.  Contact me at (973) 219-5479 for any ASTB-E or Sky High related questions.
+          </p>
 
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="rounded-lg bg-zinc-900 p-6">
@@ -134,31 +149,39 @@ export default function ASTBPrepPage() {
 
             {date && (
               <div className="rounded-lg bg-zinc-900 p-6">
-                <Label className="text-white">Time slot</Label>
-                <div className="mt-4 flex flex-wrap gap-3">
-                  {TIME_SLOTS.map((slot) => {
-                    const booked = isSlotBooked(slot)
-                    const selected = timeSlot === slot
-                    return (
-                      <button
-                        key={slot}
-                        type="button"
-                        disabled={booked}
-                        onClick={() => setTimeSlot(slot)}
-                        className={`rounded-full px-6 py-2 text-sm transition-colors ${
-                          booked
-                            ? "cursor-not-allowed bg-zinc-800 text-gray-500"
-                            : selected
-                              ? "bg-white text-black"
-                              : "bg-zinc-800 text-white hover:bg-zinc-700"
-                        }`}
-                      >
-                        {slot}
-                        {booked && " (booked)"}
-                      </button>
-                    )
-                  })}
-                </div>
+                {isVacationDate(date) ? (
+                  <p className="text-amber-200 text-sm">
+                    I'm on vacation March 12–22 and unavailable for sessions. Please pick another date.
+                  </p>
+                ) : (
+                  <>
+                    <Label className="text-white">Time slot</Label>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {TIME_SLOTS.map((slot) => {
+                        const booked = isSlotBooked(slot)
+                        const selected = timeSlot === slot
+                        return (
+                          <button
+                            key={slot}
+                            type="button"
+                            disabled={booked}
+                            onClick={() => setTimeSlot(slot)}
+                            className={`rounded-full px-6 py-2 text-sm transition-colors ${
+                              booked
+                                ? "cursor-not-allowed bg-zinc-800 text-gray-500"
+                                : selected
+                                  ? "bg-white text-black"
+                                  : "bg-zinc-800 text-white hover:bg-zinc-700"
+                            }`}
+                          >
+                            {slot}
+                            {booked && " (booked)"}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </>
+                )}
               </div>
             )}
 
@@ -210,7 +233,7 @@ export default function ASTBPrepPage() {
 
             <Button
               type="submit"
-              disabled={loading || !date || !timeSlot}
+              disabled={loading || !date || !timeSlot || isVacationDate(date)}
               className="w-full rounded-full bg-white text-black hover:bg-gray-200 py-6 text-base font-medium"
             >
               {loading ? "Scheduling..." : "Schedule session"}

@@ -151,7 +151,7 @@ export default function ASTBPrepPage() {
               <div className="rounded-lg bg-zinc-900 p-6">
                 {isVacationDate(date) ? (
                   <p className="text-amber-200 text-sm">
-                    I'm on vacation March 12–22 and unavailable for sessions. Please pick another date.
+                    I&apos;m on vacation March 12–22 and unavailable for sessions. Please pick another date.
                   </p>
                 ) : (
                   <>

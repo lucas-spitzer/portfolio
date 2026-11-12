@@ -17,22 +17,25 @@ export default function Portfolio() {
       description: "3D Data Visualization",
       icon: true,
       github: "https://github.com/lucas-spitzer/Data3D",
+      linkLabel: "View on GitHub",
     },
     {
       src: "/icons/Recall.svg",
       alt: "Project 2",
-      title: "QnGen",
-      description: "AI & Machine Learning",
+      title: "Arsenal",
+      description: "Private Study Platform",
       icon: true,
-      github: "https://qngen.base44.app",
+      github: "https://github.com/lucas-spitzer/arsenal",
+      linkLabel: "View on GitHub",
     },
     {
       src: "/icons/Web-Portfolio.svg",
       alt: "Project 3",
-      title: "Web Portfolio",
-      description: "Web App Development",
+      title: "Sky High Academy",
+      description: "Mobile App",
       icon: true,
-      github: "https://github.com/lucas-spitzer/portfolio",
+      github: "https://apps.apple.com/us/app/sky-high-academy/id6759813300",
+      linkLabel: "App Store",
     },
     {
       src: "/icons/Bit-Safe.svg",
@@ -41,6 +44,7 @@ export default function Portfolio() {
       description: "Password Managment Software",
       icon: true,
       github: "https://github.com/lucas-spitzer/Bit-Safe",
+      linkLabel: "View on GitHub",
     },
   ]
 
@@ -93,7 +97,7 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className="mt-4 rounded-full bg-white/10 px-4 py-1 text-sm text-white hover:bg-white/20 transition-colors"
                 >
-                  {project.title === "QnGen" ? "Visit App" : "View on GitHub"}
+                  {project.linkLabel}
                 </a>
               </div>
             </motion.div>

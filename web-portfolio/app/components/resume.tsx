@@ -54,12 +54,12 @@ export default function Resume() {
             {activeFilter === "experience" && (
               <div className="space-y-8">
                 <div className="rounded-lg bg-zinc-900 p-6">
-                  <h3 className="text-xl font-semibold">Substitute Teacher</h3>
-                  <p className="text-sm text-gray-400">Roxbury Public Schools • October 2025 - Present</p>
+                  <h3 className="text-xl font-semibold">Founder</h3>
+                  <p className="text-sm text-gray-400">Sky High Academy • October 2025 - October 2026</p>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
-                    <li>Led classrooms across grade levels, delivering instruction while maintaining continuity with district lesson plans.</li>
-                    <li>Maintained structured, respectful learning environments through proactive classroom management and clear expectations.</li>
-                    <li>Built strong rapport with students and faculty to support a positive, productive school culture.</li>
+                    <li>Implemented security and privacy controls to protect user data and prepare the platform for App Store submission.</li>
+                    <li>Applied psychology principles to encourage consistent study with spaced repetition, feedback, and visible progress.</li>
+                    <li>Organized complex aptitude material into focused educational videos to help users address knowledge gaps.</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
@@ -78,6 +78,15 @@ export default function Resume() {
                     <li>Communicated a development plan and built a secure data pipeline for five different types of partner&apos;s OpenAI assets.</li>
                     <li>Programmed hundreds of lines of code with Cranium&apos;s development team using the .NET Framework & C# language.</li>
                     <li>Practiced agile methodology daily while leveraging Azure DevOps.</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Information Technology Assistant</h3>
+                  <p className="text-sm text-gray-400">Mount Olive Township • February 2023 - April 2023</p>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Utilized cybersecurity tools to identify, monitor, and support efforts to address security risks.</li>
+                    <li>Provided on-site technical assistance involving computer hardware assembly and repair for township IT operations.</li>
+                    <li>Assisted with Wi-Fi mapping and network support for township devices and staff.</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
@@ -130,6 +139,15 @@ export default function Resume() {
             {activeFilter === "reading" && (
               <div className="space-y-8">
                 <div className="rounded-lg bg-zinc-900 p-6">
+                  <h3 className="text-xl font-semibold">Leadership</h3>
+                  <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
+                    <li>Extreme Ownership - Jocko Willink</li>
+                    <li>Chop Wood Carry Water - Joshua Medcalf</li>
+                    <li>Leaders Eat Last - Simon Sinek</li>
+                    <li>MCDP 1 Warfighting - U.S. Marine Corps</li>
+                  </ul>
+                </div>
+                <div className="rounded-lg bg-zinc-900 p-6">
                   <h3 className="text-xl font-semibold">Predictions</h3>
                   <ul className="mt-4 list-disc space-y-2 pl-4 text-gray-300">
                     <li>The Signal and the Noise - Nate Silver</li>
@@ -143,6 +161,7 @@ export default function Resume() {
                     <li>Deep Work - Cal Newport</li>
                     <li>Flow - Mihaly Csikszentmihalyi</li>
                     <li>The 7 Habits of Highly Effective People - Stephen Covey</li>
+                    <li>Ikigai - Héctor García</li>
                   </ul>
                 </div>
                 <div className="rounded-lg bg-zinc-900 p-6">
